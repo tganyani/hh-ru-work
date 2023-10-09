@@ -1,0 +1,121 @@
+// chip
+$chip-background-color: #f2f2f2;
+$chip-height: 20px;
+$chip-border-radius: 10px;
+$chip-padding: 8px;
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .logo {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 0;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 20px;
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+    .menu {
+      border: 2px solid lightgrey;
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      &:hover {
+        border-color: #ff6b00;
+      }
+    }
+  }
+  .center {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 12px;
+
+    .calender {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $chip-background-color;
+      height: $chip-height;
+      border-radius: $chip-border-radius;
+      padding: {
+        left: $chip-padding;
+        right: $chip-padding;
+      }
+    }
+    .dollar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $chip-background-color;
+      height: $chip-height;
+      border-radius: $chip-border-radius;
+      // text-align: center;
+      padding: {
+        left: $chip-padding;
+        right: $chip-padding;
+      }
+    }
+    .euro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $chip-background-color;
+      height: $chip-height;
+      border-radius: $chip-border-radius;
+      // text-align: center;
+      padding: {
+        left: $chip-padding;
+        right: $chip-padding;
+      }
+    }
+    .bitcoin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $chip-background-color;
+      height: $chip-height;
+      border-radius: $chip-border-radius;
+      padding: {
+        left: $chip-padding;
+        right: $chip-padding;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    column-gap: 10px;
+    align-items: center;
+    .searchIcon,
+    .accountIcon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: $chip-height;
+      width: $chip-height;
+      border-radius: $chip-border-radius;
+      background-color: #262626;
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    .center {
+      max-width: 50%;
+      white-space: nowrap;
+      overflow-x: scroll;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+    align-items: center;
+    padding: 12px;
+    ul{
+        list-style: none;
+        li{
+            &:hover{
+                color: #FF6B00;
+            }
+        }
+        .telegram{
+            display: flex;
+            flex-flow: row nowrap;
+            column-gap: 12px;
+            align-items: center;
+            .telegramDiv{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                padding: 3px;
+                border-radius: 13px;
+            }
+        }
+    }
+    button{
+        background-color: #FF6B00;
+        color: white;
+        border: none;
+        padding: 4px;
+        margin-right: 10px;
+        border-radius: 8px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}

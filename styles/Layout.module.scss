@@ -1,0 +1,15 @@
+.container{
+    .main{
+        height: calc(100vh - 180px);
+        display:flex;
+        flex-flow: row nowrap;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    .main{
+        position: relative;
+    }
+  }
+}

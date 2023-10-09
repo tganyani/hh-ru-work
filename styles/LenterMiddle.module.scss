@@ -1,0 +1,58 @@
+.container {
+  padding: 12px;
+  .cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 12px;
+    .card {
+      background-color: #f2f2f2;
+      width: 200px;
+      border-radius: 12px;
+      padding: 8px;
+      .top {
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 12px;
+        align-items: center;
+        button {
+          background-color: #ff6b00;
+          border: none;
+          color: white;
+          border-radius: 8px;
+          font-size: 11px;
+          height: 20px;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .center {
+        height: 60px;
+      }
+      // .bottom{
+      // }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    .cardContainer {
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    .cardContainer {
+      justify-content: space-around;
+    }
+  }
+}
